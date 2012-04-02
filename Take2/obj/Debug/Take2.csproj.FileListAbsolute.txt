@@ -1,0 +1,10 @@
+c:\Users\alkimyst\Documents\Visual Studio 2010\Projects\Take2\Take2\obj\Debug\ResolveAssemblyReference.cache
+c:\Users\alkimyst\Documents\Visual Studio 2010\Projects\Take2\Take2\bin\Take2.dll
+c:\Users\alkimyst\Documents\Visual Studio 2010\Projects\Take2\Take2\bin\Take2.pdb
+c:\Users\alkimyst\Documents\Visual Studio 2010\Projects\Take2\Take2\bin\EntityFramework.dll
+c:\Users\alkimyst\Documents\Visual Studio 2010\Projects\Take2\Take2\bin\HtmlAgilityPack.dll
+c:\Users\alkimyst\Documents\Visual Studio 2010\Projects\Take2\Take2\bin\EntityFramework.xml
+c:\Users\alkimyst\Documents\Visual Studio 2010\Projects\Take2\Take2\bin\HtmlAgilityPack.pdb
+c:\Users\alkimyst\Documents\Visual Studio 2010\Projects\Take2\Take2\bin\HtmlAgilityPack.xml
+c:\Users\alkimyst\Documents\Visual Studio 2010\Projects\Take2\Take2\obj\Debug\Take2.dll
+c:\Users\alkimyst\Documents\Visual Studio 2010\Projects\Take2\Take2\obj\Debug\Take2.pdb
