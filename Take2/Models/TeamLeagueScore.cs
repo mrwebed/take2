@@ -7,7 +7,7 @@ namespace Take2.Models
 {
     public class TeamLeagueScore
     {
-        public int TeamId { get; set; }
+        public int TeamLeagueScoreId { get; set; }
         public string teamname { get; set; }
         public int points { get; set; }
         public int goalfor { get; set; }

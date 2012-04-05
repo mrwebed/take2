@@ -77,22 +77,14 @@ namespace Take2.Controllers
             ViewBag.lastscrapedinhours = (DateTime.Now - lastScraped).TotalHours.ToString("F");
             }
             else
-            {ViewBag.lastscrapenull = true; }
-            //
-            //try { 
-            //DateTime lastScraped = dbfirstfuntimes.MatchResults.Find(1).scrapetime;
-            //ViewBag.lastscrapeddate = lastScraped;
-            //ViewBag.lastscrapedinhours = (DateTime.Now - lastScraped).TotalHours.ToString("F");
-            //}
-            //catch (System.ArgumentNullException)  //catches when DB doesnt exist
-            //{  
-            //    ViewBag.lastscrapenull = true; 
+            {
+                ViewBag.lastscrapenull = true; 
             }
         }
 
         //
         //Data scraper, gets the Beeb results page, placing into a 
-        public HtmlDocument scraperOutput ()
+        public HtmlDocument scraperOutput()
         {
             string url = @"http://www.bbc.co.uk/sport/football/results/partial/competition-118996114";
             HtmlWeb htmlWeb = new HtmlWeb();

@@ -10,7 +10,7 @@ namespace Take2.Models
     public class resultsDBcontext : DbContext
     {
         public DbSet<MatchResult> MatchResults { get; set; }
-        public DbSet<MatchResult> TeamLeagueScore { get; set; }
+        public DbSet<TeamLeagueScore> TeamLeagueScores { get; set; }
         //protected override void OnModelCreating(DbModelBuilder modelBuilder)
         //{
         //    modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
