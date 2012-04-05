@@ -12,5 +12,6 @@ namespace Take2.Models
         public int points { get; set; }
         public int goalfor { get; set; }
         public int goalagainst { get; set; }
+        public int goaldifference { get; set; }
     }
 }

@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Take2.Models.TeamLeagueScore>
+
+@{
+    ViewBag.Title = "Index";
+    int i = 1;
+}
+
+<h2>Index</h2>
+<table>
+<tr><td>postion</td><td>teamname</td><td>points</td><td>goalfor</td><td>goalagainst</td><td>goaldifference</td></tr>
+
+@foreach (var teamitemlistderp in Model)
+{
+    
+    <tr><td>@i</td><td>@teamitemlistderp.teamname</td><td>@teamitemlistderp.points</td><td>@teamitemlistderp.goalfor</td><td>@teamitemlistderp.goalagainst</td><td>@teamitemlistderp.goaldifference</td></tr>
+    i++;
+}
+</table>

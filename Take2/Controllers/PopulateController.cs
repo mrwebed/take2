@@ -69,16 +69,27 @@ namespace Take2.Controllers
         //Last Scrape : date/time details got from db
         public void Scrapetimeprocessing()
         {
-            //DateTime lastScraped = new DateTime;
-            if (dbfirstfuntimes.MatchResults.Find(1) != null)
-            {
-            DateTime lastScraped = dbfirstfuntimes.MatchResults.Find(1).scrapetime;
-            ViewBag.lastscrapeddate = lastScraped;
-            ViewBag.lastscrapedinhours = (DateTime.Now - lastScraped).TotalHours.ToString("F");
+            ////DateTime lastScraped = new DateTime;
+            //if (dbfirstfuntimes.MatchResults.Find(1) != null)
+            //{
+            //DateTime lastScraped = dbfirstfuntimes.MatchResults.Find(1).scrapetime;
+            //ViewBag.lastscrapeddate = lastScraped;
+            //ViewBag.lastscrapedinhours = (DateTime.Now - lastScraped).TotalHours.ToString("F");
+            //}
+            //else
+            //{
+            //    ViewBag.lastscrapenull = true; 
+            //}
+            
+           try
+           {
+                DateTime lastScraped = dbfirstfuntimes.MatchResults.Find(1).scrapetime;
+                ViewBag.lastscrapeddate = lastScraped;
+                ViewBag.lastscrapedinhours = (DateTime.Now - lastScraped).TotalHours.ToString("F");
             }
-            else
+           catch
             {
-                ViewBag.lastscrapenull = true; 
+                ViewBag.lastscrapenull = true;
             }
         }
 
