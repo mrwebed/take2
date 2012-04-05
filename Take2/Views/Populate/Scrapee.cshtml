@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Take2.Models.MatchResult> 
+
+@{
+    ViewBag.Title = "Index > Populate: Scrape Timing Details and Results db";
+}
+
+<h2>Index :resultslist</h2>
+@if (ViewBag.comefrom == true)
+{
+    <p> Old scrape data, used as matchIDs match</p>
+    <p> Beeb Page still scraped : @ViewBag.loadingTime Sec</p>
+}
+else
+{
+<p> Process started: @ViewBag.thenow</p>
+<p> Process ended  : @ViewBag.thenownow </p>
+<p> Page scraped in @ViewBag.loadingTime Seconds</p>
+<p> DB created: @ViewBag.time3 Sec after start</p>
+}
+<h2>List:</h2>
+    @foreach (var result in Model)
+    {
+    <p>@result.ID: @result.date.ToShortDateString()  |@result.hteamres| @result.hteam > @result.hteamgoal - @result.ateamgoal < @result.ateam </p>
+    }

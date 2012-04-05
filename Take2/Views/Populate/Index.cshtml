@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Take2.Models.MatchResult>
+
+@{
+    ViewBag.Title = "Index > Populate";
+}
+
+<h2>Index :Processing page</h2>
+<!--if (ViewBag.lastscrapedinhours < 1)
+{-->
+<p><a href="Scrapee">Scrape</a> me some dataz (this is a long process)</p>
+    @if (ViewBag.lastscrapenull == true)
+    { 
+    <p>database doesnt exist :O</p>
+    }
+    else
+    {
+    <p> database last updated on @ViewBag.lastscrapeddate, </p>
+    <p>@ViewBag.lastscrapedinhours hours ago</p>
+    <p>---------------------------</p>
+    foreach (var result in Model)
+    {
+    <p>@result.ID: @result.date.ToShortDateString()  |@result.hteamres| @result.hteam > @result.hteamgoal - @result.ateamgoal < @result.ateam </p>
+    }
+    }
+
+<!--}-->

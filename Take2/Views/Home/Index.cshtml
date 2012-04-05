@@ -1,16 +1,6 @@
-﻿@model  IEnumerable<Take2.Models.MatchResult> 
-
-@{
-    ViewBag.Title = "Index :resultslist";
+﻿@{
+    ViewBag.Title = "Index";
 }
 
-<h2>Index :resultslist</h2>
-
-
-@foreach (var result in Model)
-{
-    <p>@result.ID: @result.hteam -vs- @result.ateam</p>
-}
-
-
-<p> work goddamn you! too much agilityfail... </p>
+<h2>Index</h2>
+<a href="../Populate/Index"> Populate Controller</a>

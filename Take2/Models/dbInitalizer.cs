@@ -6,7 +6,7 @@ using System.Data.Entity;
 
 namespace Take2.Models
 {
-    public class dbInitalizer : DropCreateDatabaseAlways<resultsDBcontext>
+    public class dbInitalizer : DropCreateDatabaseIfModelChanges<resultsDBcontext>
     {
         protected override void Seed(resultsDBcontext context)
         {
