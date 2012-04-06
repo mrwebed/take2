@@ -21,14 +21,14 @@ namespace Take2.Controllers
             { tablemaker();
             restoftablegenerater();
             }
-            return View(db.TeamLeagueScores.OrderByDescending(TeamLeagueScore => TeamLeagueScore.points).
-                ThenByDescending(TeamLeagueScore => TeamLeagueScore.goaldifference).
-                ThenByDescending(TeamLeagueScore => TeamLeagueScore.goalfor));
+            return View(db.TeamLeagueScores.OrderByDescending(a => a.points).
+                ThenByDescending(a => a.goaldifference).
+                ThenByDescending(a => a.goalfor));
         }
         //DB generater
 
 
-        //Make the table :O make the DB possibly
+        //Make the table  (//:O make the DB possibly)?
         public void tablemaker()
         {
             //IEnumerable<MatchResult> 
@@ -38,6 +38,7 @@ namespace Take2.Controllers
             {
                 TeamLeagueScore abrandnewteam = new TeamLeagueScore();
                 abrandnewteam.teamname = teamnameitem;
+                abrandnewteam.datecreated = DateTime.Now;
                 db.TeamLeagueScores.Add(abrandnewteam);
                 db.SaveChanges();
             }
@@ -96,13 +97,10 @@ namespace Take2.Controllers
                 teamitem.goalagainst = homegoalsagainsttotal + awaygoalsagainsttotal;
                 //teamitem.goaldifference
                 teamitem.goaldifference = teamitem.goalfor - teamitem.goalagainst;
-
+ 
                 db.SaveChanges();
             }
           
         }
-
-        //Generate remaining fixtures
-
     }
 }

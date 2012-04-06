@@ -13,5 +13,6 @@ namespace Take2.Models
         public int goalfor { get; set; }
         public int goalagainst { get; set; }
         public int goaldifference { get; set; }
+        public DateTime datecreated { get; set; }
     }
 }

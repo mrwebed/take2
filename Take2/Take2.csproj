@@ -68,11 +68,14 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LeagueTabController.cs" />
     <Compile Include="Controllers\PopulateController.cs" />
+    <Compile Include="Controllers\RemainingFixtureController.cs" />
+    <Compile Include="Controllers\RemFixtureplusLeagueTabController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\dbInitalizer.cs" />
     <Compile Include="Models\MatchResult.cs" />
+    <Compile Include="Models\RemainingFixture.cs" />
     <Compile Include="Models\resultsDBcontext.cs" />
     <Compile Include="Models\TeamLeagueScore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -158,6 +161,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\LeagueTab\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\RemainingFixture\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

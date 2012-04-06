@@ -11,6 +11,7 @@ namespace Take2.Models
     {
         public DbSet<MatchResult> MatchResults { get; set; }
         public DbSet<TeamLeagueScore> TeamLeagueScores { get; set; }
+        public DbSet<RemainingFixture> RemainingFixtures { get; set; }
         //protected override void OnModelCreating(DbModelBuilder modelBuilder)
         //{
         //    modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();

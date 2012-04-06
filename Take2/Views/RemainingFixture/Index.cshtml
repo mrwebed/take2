@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Take2.Models.RemainingFixture>
+           
+@{
+    ViewBag.Title = "Remaining Fixtures";
+    int i = 1;
+}
+
+<h2>Index: Remaining Fixtures</h2>
+<table>
+<tr><td>#</td><td>home team</td><td> Verses </td><td>away team</td></tr>
+@foreach (var remFix in Model)
+{
+    <tr><td>@i</td><td>@remFix.hteam</td><td> - </td><td>@remFix.ateam</td></tr>
+    i++;
+}       
+</table>
